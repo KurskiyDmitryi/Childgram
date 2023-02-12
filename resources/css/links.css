@@ -1,0 +1,20 @@
+.form-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-links a:hover{
+    color: hotpink;
+}
+
+.form-links a {
+    color: #0077FF;
+}
+
+.nav-item a {
+    color: #FFFFFF;
+}
+
+.nav-item a:hover{
+    color: hotpink;
+}

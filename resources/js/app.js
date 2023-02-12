@@ -1,0 +1,10 @@
+import './bootstrap';
+import '../css/app.css';
+import '../css/inputs.css';
+import '../css/forms.css';
+import '../css/header.css';
+import '../css/footer.css';
+import '../css/others/welcome.css';
+import '../css/links.css';
+import '../css/captcha.css';
+import '../css/verify_page.css';

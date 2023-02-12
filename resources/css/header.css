@@ -1,0 +1,33 @@
+.header {
+    background-color: blue;
+}
+
+.navbar-brand {
+    color: black;
+    display: inline-block;
+}
+
+#navbarNav ul{
+   margin-left: 800px;
+}
+
+.navbar-brand:hover {
+    color: hotpink;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: hotpink;
+}
