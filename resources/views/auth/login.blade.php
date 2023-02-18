@@ -21,7 +21,7 @@
             <strong>{{ $errors->first('password') }}</strong>
         </span>
         @endif
-        {{Form::submit('Submit')}}
+        {{Form::submit('Login')}}
         {{Form::close()}}
         <div class="form-links">
             {{link_to_route('register','Register')}}

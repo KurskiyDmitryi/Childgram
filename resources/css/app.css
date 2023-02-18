@@ -7,3 +7,7 @@
     margin: auto;
 }
 
+.today-date{
+    text-align: center;
+    text-decoration: underline;
+}

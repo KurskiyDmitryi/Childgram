@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home')->middleware('verified');
+Route::get('/',[HomeController::class,'index'])->name('home')->middleware('verified');
+
+Route::post('/send',[MailController::class,'sendMail'])->name('sendMail');
 
 Auth::routes(['verify' => true]);
 

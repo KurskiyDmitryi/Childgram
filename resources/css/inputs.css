@@ -8,6 +8,14 @@ input[type="text"], input[type="password"], input[type='email'] {
     font-size: 18px;
 }
 
+label, textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: blue;
+}
+
 input[type="submit"] {
     background-color: #0077FF;
     border: 1px solid #0077FF;
