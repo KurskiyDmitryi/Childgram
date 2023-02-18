@@ -25,7 +25,15 @@ class MailRequest extends FormRequest
     {
         return [
             'file' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'description'=>'max:2000'
+            'description' => 'max:2000'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'file' => 'choose the correct data type',
+            'description'=>'max number of characters is 2048'
         ];
     }
 

@@ -20,8 +20,20 @@
     @if($count < 3)
         <div>
             {{ Form::open(['method' => 'post', 'enctype' => 'multipart/form-data','route'=>'sendMail','files'=>'true']) }}
-            {{Form::file('file',['type'=>'file'])}}
-            {{Form::textarea('description','',['class'=>'form-group'])}}
+            {{ Form::file('file', ['class' => $errors->has('file') ? 'is-invalid' : '', 'id' => 'file']) }}
+
+            @if($errors->has('file'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('file') }}
+                </div>
+            @endif
+            {{ Form::textarea('description', null, ['class' => $errors->has('description') ? 'form-control is-invalid' : 'form-control', 'id' => 'description']) }}
+
+            @if($errors->has('description'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('description') }}
+                </div>
+            @endif
             {{ Form::hidden('user_id', Auth::user()->id) }}
             {{Form::button('Upload',['class'=>'btn btn-primary','type'=>'submit'])}}
             {{ Form::close() }}
